@@ -1,0 +1,20 @@
+with-expecter: true
+packages:
+  github.com/huberts90/restful-api/internal/storage:
+    interfaces:
+      Storer:
+        config:
+          all: true
+          outpkg: storagemocks
+          filename: "mock_{{.InterfaceName}}.go"
+          dir: "internal/storage/mocks"
+          mockname: "Mock{{.InterfaceName}}"
+  github.com/huberts90/restful-api/internal/domain:
+    interfaces:
+      User:
+        config:
+          all: true
+          outpkg: domainmocks
+          filename: "mock_{{.InterfaceName}}.go"
+          dir: "internal/domain/mocks"
+          mockname: "Mock{{.InterfaceName}}" 
