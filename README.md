@@ -2,6 +2,8 @@
 
 ## Project Structure
 
+This is the skeleton of the RESTful application. The tests demonstrate the testing approach, but they do not exhaust the topic.
+
 ```
 ├── bin/                     # Build binaries
 ├── cmd/
